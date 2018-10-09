@@ -1,0 +1,59 @@
+
+/* header */
+#home .head{
+    height: 49px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+/* gird */
+#home .head .row{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* header_left */
+#home .head .head_l{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff url('../img/logo.png') no-repeat 10px bottom;
+    background-size: auto 2rem;
+    padding-left: 10px;
+}
+
+/* header_right */
+#home .head .head_r{
+    margin: 0;
+    padding: 0;
+}
+#home .head .head_r .nav{
+    height: 100%;
+    line-height: 70px;
+    float: right;
+    padding-right: 10px;
+}
+#home .head .head_r .nav li{
+    list-style: none;
+    float: left;
+    margin-right: .32rem;
+}
+
+/* ************************************************************* */
+
+/* footer */
+footer.foot{
+    background: rgb(19, 20, 21) url('../img/footer.png') no-repeat center .4rem; 
+    background-size: 6.68rem 2.48rem;   
+    color: rgb(102, 102, 102);
+    padding: 0 27px;
+}
+/* company dir */
+.foot .dir{
+    padding: 56px 0 20px 0; 
+    border-bottom: 1px solid rgb(102, 102, 102);
+    margin-bottom: 20px;
+}
+
+
+
+/* company address */
