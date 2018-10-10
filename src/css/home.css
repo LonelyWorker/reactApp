@@ -1,4 +1,8 @@
-
+html,body{
+    font-size: 12px;
+    background-size: auto; 
+    background-color: rgb(232, 232, 232); 
+}
 /* header */
 #home .head{
     height: 49px;

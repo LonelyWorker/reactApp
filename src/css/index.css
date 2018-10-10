@@ -1,7 +1,180 @@
-/* Index */
+/* Index Content */
+
+/* Movie */
 #index .autoMovie{
     background: url('../img/movie.png') no-repeat 50%;
-    background: auto 100%;
+    background-size: 100% 100%;
     width: 100%;
-    height: 4.22rem;
+    height: 20rem;
+}
+
+/* .favorBr */
+#index .favorBr{
+    background: #fff url('../img/flavor.png') no-repeat 50%;
+    background-size: auto 5rem;
+    height: 6.25rem;
+    margin-top: 1.25rem;
+}
+#index .favorContent{
+    height: 18.75rem;
+    background: #fff url('../img/tangwei.png') no-repeat 50%;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/* imgContent */
+#index .favorContent .imgContent{
+    width: 12.5rem;
+    padding: 0 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, .4);
+}
+#index .favorContent .imgContent img{
+    width: 9.375rem;
+    height: 7.5rem;
+}
+#index .favorContent .imgContent .spanContent{
+    text-align: center;
+}
+
+/* intro */
+#index .intro{
+    color: #fff;
+    font-size: 12px;
+    overflow:  hidden;
+    background-color: rgb(19, 20, 21); 
+    margin: 5px 0 10px;
+    display: flex;
+}
+#index .intro .intro_l{
+    width: 100px;
+    border: 1px solid #ccc;
+    background:url('../img/laofuzi.png') no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#index .intro .intro_r{
+    flex: 1;
+    float: right;
+    margin-left: 10px;
+    padding-top: 60px;
+    background: url('../img/product.png') no-repeat left top;
+    background-size: auto 10%;
+    display: flex;
+    flex-direction: column;
+}
+#index .intro .intro_r .first{
+    background: url('../img/bean.png') no-repeat left 5%;
+    background-size: 2.25rem 2.25rem;
+    padding: 10px 0;
+    padding-left: 36px;
+    
+}
+#index .intro .intro_r .seconde{
+    background: url('../img/crown.png') no-repeat left 5%;
+    background-size: 2.25rem 2.25rem;
+    padding: 10px 0;
+    padding-left: 36px;
+    
+}
+#index .intro .intro_r .three{
+    background: url('../img/fire.png') no-repeat left 5%;
+    background-size: 2.25rem 2.25rem;
+    padding: 10px 0;
+    padding-left: 36px;
+    
+}
+/* bigFont */
+.big{
+    font-size: .28rem;
+    color: #fff;
+    opacity: .7;
+    margin-bottom: .02rem;
+}
+/* small-fontSize */
+.small{    
+    color: #555;
+    font-size: .2rem;
+
+}
+
+
+/* mine */
+.mine{
+    padding: 10px 10px;
+    background: rgb(232, 232, 232);
+}
+.mine .top{
+    height: 6.25rem;
+    padding: 20px 0;
+    background: url('../img/mine.png') no-repeat center .2rem;
+    background-size: auto 5rem;
+}
+.mine .bottom{
+    color: #999;
+    font-size: 12px;
+    margin-bottom: .125rem;
+    padding: 0 .34375rem;
+}
+.mine .banner{
+    display: flex;
+}
+.mine .banner .oneBanner{
+    flex:1;
+    width: 33.3%;
+    height: 12.5rem;
+    max-width: 12.5rem;
+    background: url('../img/can01.png') no-repeat center;
+    background: auto 100%;
+}
+
+.mine .banner .twoBanner{
+    flex:1;
+    width: 33.3%;
+    height: 12.5rem;
+    max-width: 12.5rem;
+    margin-left: 5px;
+    background: url('../img/can02.png') no-repeat center;
+    background: auto 100%;
+}
+
+.mine .banner .threeBanner{
+    flex:1;
+    width: 33.3%;
+    height: 12.5rem;
+    max-width: 12.5rem;
+    margin-left: 5px;
+    background: url('../img/can03.png') no-repeat center;
+    background: auto 100%;
+}
+
+/* company */
+.company .title{
+    height: 6.25rem;
+    padding: 20px 0;
+    background: url('../img/pananer.png') no-repeat center .2rem;
+    background-size: auto 5rem;
+}
+.company .china,.english{
+    text-align: center
+}
+
+.company .photo{
+    display: flex;
+    padding: 10px 0;
+}
+.company .photo_one,.photo_two{
+    flex:1;
+    width: 50%;
+    height: 9.375rem;
+    max-width: 12.5rem;
+    margin-left: 5px;
+    background: url('../img/can04.png') no-repeat center;
+    background: auto 100%;
+}
+.company .photo_two{
+    background: url('../img/can05.png') no-repeat center;
+    background: auto 100%;
 }
