@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import Index from './index';
 import '../css/home.css';
+import Index from './index';
+import Receive from './receive';
+import Mine from './child/mine';
+import Onemine from './child/childs/one_mine';
+import Twomine from './child/childs/two_mine';
+import Threemine from './child/childs/three_mine';
+import Fourmine from './child/childs/four_mine';
+
+
 
 class Home extends Component{
     constructor(){
         super();
         this.state={
-            list:["首页","关于我们","最新活动"]
+            tab:["首页","关于我们","最新活动"]
         }
     }
     render(){
@@ -17,11 +25,11 @@ class Home extends Component{
                         <div className="col-4 head_l">
                         </div>
                         <div className="col-8 head_r">
-                            <nav className="nav">
-                             <ul>
+                            <nav >
+                             <ul className="nav">
                                 {
-                                    this.state.list.map((item, key) => {
-                                        return <li key={key}>{item}</li>
+                                    this.state.tab.map((item, key) => {
+                                        return <li key={key}><span>{item}</span></li>
                                     })
                                 }
                              </ul>
@@ -30,7 +38,13 @@ class Home extends Component{
                     </div>
                 </header>
                 <main className="main">
-                    <Index />
+                    {/* <Index />
+                    <Mine/>
+                    <Onemine />
+                    <Twomine />
+                    <Threemine/>
+                    <Fourmine/> */}
+                    <Receive/>
                 </main>
                 <footer className = "foot">
                   <div className="dir">

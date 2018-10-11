@@ -1,0 +1,18 @@
+/* mine */
+
+
+/* mine banner */
+.banner{
+    background: url('../img/banner.png') no-repeat 50%;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 12.5rem;
+}
+
+/* mine list */ 
+.tab .oLi{
+    padding: 10px 0;
+    font-size: .75rem;
+    margin: 0;
+    text-align: center;
+}

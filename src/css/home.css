@@ -3,9 +3,14 @@ html,body{
     background-size: auto; 
     background-color: rgb(232, 232, 232); 
 }
+#home{
+    overflow: hidden;
+}
 /* header */
 #home .head{
     height: 49px;
+    padding-left: 10px;
+    font-size: .75rem; 
     border-bottom: 1px solid #ccc;
     background: #fff;
 }
@@ -34,12 +39,13 @@ html,body{
     height: 100%;
     line-height: 70px;
     float: right;
-    padding-right: 10px;
 }
-#home .head .head_r .nav li{
+#home .head .head_r .nav span{
+    padding: 0;
+    padding: 0;
+    padding-right: 10px;
     list-style: none;
     float: left;
-    margin-right: .32rem;
 }
 
 /* ************************************************************* */

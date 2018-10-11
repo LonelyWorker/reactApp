@@ -1,0 +1,70 @@
+/* mineCom */
+#mineCom{
+    background: #fff;
+    padding: 20px 0;
+}
+#mineCom .head_title{
+    height: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: 20px;
+}
+#mineCom i{
+    display: inline-block;
+    width: .625rem;
+    height: 1.75rem;
+    background: #172991;
+    float: left;
+    margin-right: 1.25rem;
+    margin-top: 5px;
+}
+
+/* main */
+.txt{
+    padding: 20px;
+    padding: 0 40px;
+}
+.txt .first,.second{
+    margin-bottom: 15px;
+}
+
+/* company */
+.txt .first div{
+    padding-left: 1.875rem;
+    background: url('../img/iphone.png') no-repeat center left;
+    background-size: auto 1.25rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+.txt .first div:nth-child(2){
+    background: url('../img/aide.png') no-repeat center left;
+    background-size: auto 1.25rem; 
+}
+.txt .second div{
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+
+
+/* footer */
+footer.footBanner{
+    width: 100%;
+    height: 100%;
+}
+footer.footBanner .imgFoot{
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+}
+footer.footBanner .imgFoot img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+footer.footBanner .btn{
+    width: 100%;
+    margin-top: 10px; 
+}
+footer.footBanner .btn button{
+    width: 100%;
+}
