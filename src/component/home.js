@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import '../css/home.css';
+
+import {Route,NavLink,Switch,withRouter} from 'react-router-dom'
+
+
+//引入组件
 import Index from './index';
 import Receive from './receive';
 import Mine from './child/mine';
@@ -14,9 +19,40 @@ class Home extends Component{
     constructor(){
         super();
         this.state={
-            tab:["首页","关于我们","最新活动"]
-        }
+            tabs:[
+				{
+					id:1,
+					text:'首页',
+					path:'/home'
+				},
+				{
+					id:2,
+					text:'关于我们',
+					path:'/mine'
+				},
+				{
+					id:3,
+					text:'最新活动',
+					path:'/hover'
+				}
+			]
+		}
     }
+    go(path){
+		/*
+			编程式导航获取history方式
+				* 利用Route渲染Index
+				* 利用withRouter包装组件(推荐)
+				* 利用context
+		 */
+		console.log(this)
+		// let {history} = this.props;
+
+		let {history} = this.context.router;
+
+		history.push({pathname:path});
+		// history.replace(path);
+	}
     render(){
         return (
             <div id ="home">
@@ -28,8 +64,8 @@ class Home extends Component{
                             <nav >
                              <ul className="nav">
                                 {
-                                    this.state.tab.map((item, key) => {
-                                        return <li key={key}><span>{item}</span></li>
+                                    this.state.tabs.map(tab => {
+                                        return <li key={tab.id} onClick={this.go.bind(this,tab.path)}><span>{tab.text}</span></li>
                                     })
                                 }
                              </ul>
@@ -38,13 +74,18 @@ class Home extends Component{
                     </div>
                 </header>
                 <main className="main">
-                    {/* <Index />
-                    <Mine/>
+                     {/* <Index /> */}
+                    {/*<Mine/>
                     <Onemine />
                     <Twomine />
                     <Threemine/>
-                    <Fourmine/> */}
-                    <Receive/>
+                    <Fourmine/>
+                    <Receive/> */}
+                    {/* <Switch> */}
+                        {/* <Route path="/home" component={Home} />
+                        <Route path="/index" component={Index} />
+                        <Route path="/receive" component={Receive} /> */}
+                    {/* </Switch> */}
                 </main>
                 <footer className = "foot">
                   <div className="dir">

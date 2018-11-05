@@ -7,7 +7,12 @@ class Mine extends Component{
             list:['商业模式', '品牌主张', '进场合作', '加入我们']
         }
     }
+    
     render(){
+        // var list = {
+        //     width:200,
+        //     padding: 20,
+        // }
         return(
             <div id="mine">
                 <div className="banner"></div>
